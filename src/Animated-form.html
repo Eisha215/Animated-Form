@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animated Form</title>
+        <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="../src/css/output.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7f7b6f90d4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <style>
+            input:focus ~ label, 
+            input:focus ~ :valid{top:-5px}
+        </style>
+    </head>
+    <body class="font-[poppins] bg-no-repeat bg-cover bg-[url('/src/assets/digital-digital-art-artwork-illustration-minimalism-hd-wallpaper-preview.jpg')]"></body>
+        <section class="flex justify-center items-center h-screen ">
+                <div class="form-box relative md:w-[400px]  md:h-[450px] border-2 border-[rgba(255,255,255,0.5)] rounded-lg backdrop-blur-lg px-10 py-24 text-white sm:scale-150">
+                    <h2 class="text-2xl font-semibold text-center">Login</h2>
+                    <div class="inputbox my-[30px] relative border-b-2 border-white w-[310px]">
+                        <span class="material-symbols-outlined absolute right-4 bottom-1"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" class="bg-transparent w-full h-[20px] font-medium border-0 outline-0" required>
+                        <label for="" class="absolute top-[18%] left-7 translate-y-[-50%] font-medium pointer-events-none transition duration-150 ease-in">Email</label>
+                    </div>
+                    <div class="inputbox relative border-b-2 border-white  ">
+                        <span class="  absolute right-6 bottom-1"><i class="fa-solid fa-lock"></i></span>
+                        <input type="Password"class="bg-transparent w-full h-[20px] font-medium border-0 outline-0  " required>
+                        <label for="" class="absolute left-7 top-[18%] translate-y-[-50%] font-medium pointer-events-none">Password</label>
+                    </div>
+                    <div class="forget text-center m-5 font-medium">
+                        <label for="" class=" cursor-pointer"><input type="checkbox" >Remember Me</label>
+                        <a href="#" class=" cursor-pointer hover:underline">Forget Password</a>
+                    </div>
+                    <button class="w-full text-center text-black font-medium h-10 bg-white rounded-full">Log in</button>
+                    <div class="register text-center">
+                        <p class=" cursor-pointer py-3 hover:underline">Don't have a account <a href="#">Sign up</a></p>
+                    </div>
+                </div>
+        </section>
+    </body>
+</html>
